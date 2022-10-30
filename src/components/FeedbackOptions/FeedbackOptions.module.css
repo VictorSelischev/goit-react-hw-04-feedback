@@ -1,0 +1,22 @@
+.section__buttonList {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section__buttonListItem {
+    margin-right: 30px;
+}
+
+.section__button {
+    
+    padding: 8px 32px;
+    color: white;
+    background-color: #028987;
+    border-radius: 4px;
+    border: none;
+    /* border: 1px solid #222222; */
+}
+
+.section__button:hover {
+    background-color: #046e6d;
+}
