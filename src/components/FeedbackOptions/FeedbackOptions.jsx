@@ -2,7 +2,7 @@ import React from 'react';
 import css from './FeedbackOptions.module.css';
 import PropTypes from "prop-types";
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ul className={css.section__buttonList}>
       {options.map(option => (
@@ -13,8 +13,6 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     </ul>
   );
 };
-
-export { FeedbackOptions };
 
 FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string),
