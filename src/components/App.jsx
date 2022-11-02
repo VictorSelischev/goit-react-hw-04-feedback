@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
@@ -59,10 +58,7 @@ export const App = () => {
       }}
     >
       <Section title="Please leave feedback">
-        <FeedbackOptions
-          options={options}
-          onLeaveFeedback={addFeedback}
-        />
+        <FeedbackOptions options={options} onLeaveFeedback={addFeedback} />
       </Section>
 
       {totalFeedback === 0 ? (
@@ -80,10 +76,4 @@ export const App = () => {
       )}
     </div>
   );
-};
-
-App.propTypes = {
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
 };
